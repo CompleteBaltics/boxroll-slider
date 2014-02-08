@@ -1,0 +1,60 @@
+/*!
+ * jQuery Box roll slider
+ * http://completebaltics.com/blog/jquery-roll-slider/
+ * 
+ * Copyright (c) 2014 Complete Baltics ltd. Kasparas Skripkauskas
+ * Dual licensed under the MIT and GPL licenses.
+ */
+
+/*!
+ * Slider wrapper style
+ */
+.boxroll-slider {
+  -webkit-perspective: 800px;
+     -moz-perspective: 800px;
+      -ms-perspective: 800px;
+       -o-perspective: 800px;
+          perspective: 800px;
+          
+  -webkit-transform-origin: 50% 0%;
+     -moz-transform-origin: 50% 0%;
+      -ms-transform-origin: 50% 0%;
+       -o-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+          
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+   
+   position: relative;
+}
+
+/*!
+ * Slide style
+ */
+.boxroll-slider-item { 
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+  visibility: hidden;
+  
+  transition: transform 1.0s ease-in-out, opacity 1.0s cubic-bezier(1,-1,0.3,1);
+  -webkit-transition: -webkit-transform 1.0s ease-in-out, opacity 10s cubic-bezier(1,-1,0.3,1);
+      -moz-transition: -moz-transform 1.0s ease-in-out, opacity 10.0s cubic-bezier(1,-1,0.3,1);
+         -ms-transition: -ms-transform 1.0s ease-in-out, opacity 1.0s cubic-bezier(1,-1,0.3,1);
+              -o-transition: transform 1.0s ease-in-out, opacity 10.0s cubic-bezier(1,-1,0.3,1);
+  
+  -webkit-transform: rotateX(-90deg) translate3d( 0px, 50%, 50% );
+     -moz-transform: rotateX(-90deg) translate3d( 0px, 50%, 50% );
+      -ms-transform: rotateX(-90deg) translate3d( 0px, 50%, 50% );
+       -o-transform: rotateX(-90deg) translate3d( 0px, 50%, 50% );
+          transform: rotateX(-90deg) translate3d( 0px, 50%, 50% );
+}
