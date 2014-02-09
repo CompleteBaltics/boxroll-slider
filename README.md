@@ -12,7 +12,7 @@ Usage example:
 Add the javascript file jquery.boxroll-slider.js or jquery.boxroll-slider.min.js to your html documents <HEAD>
 Add the css file jquery.boxroll-slider.css to your documents <HEAD>
  
-Use this code woth your own selector to initialize the plugin
+Use this code with your own selector to initialize the plugin
 
 $('#slide-container').boxRollSlider({<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;items: '.item', // default is the containers childre<br/>
@@ -36,4 +36,4 @@ HTML markup example<br/>
  
  jQuery Versions - 1.8+
  
- if css animations are not supported the plugin degrades to javascript crossfade event
+ if css animations are not supported the plugin degrades to javascript crossfade
